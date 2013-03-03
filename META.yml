@@ -1,5 +1,5 @@
 ---
-abstract: 'Fixed format but Fast AccessLog Middleware'
+abstract: 'Yet another AccessLog Middleware'
 author:
   - 'Masahiro Nagano <kazeburo {at} gmail.com>'
 build_requires:
@@ -21,9 +21,10 @@ no_index:
     - t
     - xt
 requires:
+  Apache::LogFormat::Compiler: 0.02
   HTTP::Status: 0
   Plack: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/kazeburo/Plack-Middleware-AxsLog.git
-version: 0.03
+version: 0.10
