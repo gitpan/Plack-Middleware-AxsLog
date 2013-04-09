@@ -2,6 +2,7 @@ package Plack::Middleware::AxsLog;
 
 use strict;
 use warnings;
+use 5.8.5;
 use parent qw/Plack::Middleware/;
 use Plack::Util;
 use Time::HiRes qw/gettimeofday/;
@@ -11,7 +12,7 @@ use Time::Local qw//;
 use HTTP::Status qw//;
 use Apache::LogFormat::Compiler;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 sub prepare_app {
     my $self = shift;
@@ -126,9 +127,12 @@ Plack::Middleware::AxsLog - Yet another AccessLog Middleware
 =head1 DESCRIPTION
 
 Alternative implementation of Plack::Middleware::AccessLog. 
-This module uses L<Apache::LogFormat::Compiler>, so 4x-5x faster than 
-Plack::Middleware::AccessLog in micro benchmarking.
+This middleware supports response_time and content_length calculation 
 AxsLog also can set condition to display logs by response_time and status code.
+
+Originally, AxsLog was faster AccessLog implementation. But PM::AccessLog became 
+to using same access-log generator module L<Apache::LogFormat::Compiler>. 
+Two middlewares have almost same performance now.
 
 =head1 ARGUMENTS
 
