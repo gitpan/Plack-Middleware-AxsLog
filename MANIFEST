@@ -1,4 +1,3 @@
-.gitignore
 Build.PL
 Changes
 LICENSE
@@ -11,8 +10,5 @@ t/01_basic.t
 t/02_error_only.t
 t/03_ltsv.t
 t/04_format.t
-Build.PL
-LICENSE
-META.json
 META.yml
 MANIFEST
