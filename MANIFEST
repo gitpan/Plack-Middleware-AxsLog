@@ -10,5 +10,6 @@ t/01_basic.t
 t/02_error_only.t
 t/03_ltsv.t
 t/04_format.t
+t/05_format_options.t
 META.yml
 MANIFEST
