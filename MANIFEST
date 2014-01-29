@@ -4,6 +4,7 @@ LICENSE
 META.json
 README.md
 cpanfile
+eg/logbench.pl
 lib/Plack/Middleware/AxsLog.pm
 t/00_compile.t
 t/01_basic.t

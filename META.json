@@ -4,7 +4,7 @@
       "Masahiro Nagano <kazeburo {at} gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.8.0",
+   "generated_by" : "Minilla/v0.11.0",
    "license" : [
       "perl_5"
    ],
@@ -43,7 +43,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Apache::LogFormat::Compiler" : "0.12",
+            "Apache::LogFormat::Compiler" : "0.30",
             "HTTP::Message" : "6.06",
             "Plack" : "1.0023",
             "perl" : "v5.8.5"
@@ -58,7 +58,7 @@
    "provides" : {
       "Plack::Middleware::AxsLog" : {
          "file" : "lib/Plack/Middleware/AxsLog.pm",
-         "version" : "0.13"
+         "version" : "0.20"
       }
    },
    "release_status" : "stable",
@@ -72,7 +72,7 @@
          "web" : "https://github.com/kazeburo/Plack-Middleware-AxsLog"
       }
    },
-   "version" : "0.13",
+   "version" : "0.20",
    "x_contributors" : [
       "zentooo <ankerasoy@gmail.com>",
       "Masahiro Nagano <kazeburo@gmail.com>"
