@@ -12,7 +12,7 @@ use Time::Local qw//;
 use HTTP::Status qw//;
 use Apache::LogFormat::Compiler;
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
 
 sub prepare_app {
     my $self = shift;
@@ -98,10 +98,10 @@ sub log_line {
     );
 
     if ( ! $self->{logger} ) {
-        $env->{'psgi.errors'}->print($log_line);
+        $env->{'psgi.errors'}->print($log_line."\n");
     }
     else {
-        $self->{logger}->($log_line);
+        $self->{logger}->($log_line."\n");
     }
 }
 

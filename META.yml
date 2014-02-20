@@ -28,7 +28,7 @@ no_index:
 provides:
   Plack::Middleware::AxsLog:
     file: lib/Plack/Middleware/AxsLog.pm
-    version: 0.20
+    version: 0.21
 requires:
   Apache::LogFormat::Compiler: 0.30
   HTTP::Message: 6.06
@@ -38,7 +38,7 @@ resources:
   bugtracker: https://github.com/kazeburo/Plack-Middleware-AxsLog/issues
   homepage: https://github.com/kazeburo/Plack-Middleware-AxsLog
   repository: git://github.com/kazeburo/Plack-Middleware-AxsLog.git
-version: 0.20
+version: 0.21
 x_contributors:
   - 'zentooo <ankerasoy@gmail.com>'
   - 'Masahiro Nagano <kazeburo@gmail.com>'
